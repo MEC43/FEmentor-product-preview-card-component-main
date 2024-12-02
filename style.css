@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  background-color: var(--cream);
+  font-size: 14px;
+  font-family: 'Montserrat', serif;
+  color: var(--dark-grayish-blue);
+}
+
+/* font option*/
+.fraunces-700 {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'SOFT' 0, 'WONK' 0;
+}
+
+.montserrat-main {
+  font-family: 'Montserrat', serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: 'Montserrat', serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* card */
+.card {
+  margin: 12rem auto;
+  background-color: var(--white);
+  max-width: calc(100% - 2rem);
+  width: 600px;
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.imgCon {
+  padding-left: 50%;
+  position: relative;
+}
+.imgCon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.detail {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cate {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.detail h1 {
+  font-size: 2.5rem;
+  color: var(--very-dark-blue);
+}
+
+.describe {
+  line-height: 1.5rem;
+}
+
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.disc-price {
+  font-size: 2.5rem;
+  color: var(--dark-cyan);
+}
+
+.befor-discount {
+  text-decoration: line-through;
+}
+
+.add-cart {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  transition: background-color 0.3s;
+}
+.add-cart:hover {
+  background-color: #184131;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .imgCon {
+    padding-left: 0;
+  }
+  .imgCon img {
+    position: static;
+  }
+
+  .card {
+    display: block;
+  }
+}
